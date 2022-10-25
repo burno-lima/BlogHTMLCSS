@@ -55,3 +55,22 @@ themeToggleBtn.addEventListener('click', () => {
     }
 });
 // Swiper
+const swiper = new Swiper('.swiper', {
+    slidesPerview: 1,
+    spaceBetweem: 20,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+        el: '.swiper-pagination'
+    },
+    breakpoints: {
+        700: {
+            slidesPerview: 2
+        },
+        1200: {
+            slidesPerview: 3
+        }
+    }
+});
